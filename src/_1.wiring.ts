@@ -1,7 +1,7 @@
-import { makeRoot } from "iti"
+import { createContainer } from "iti"
 import { A, B, C } from "./_0.business-logic"
 
-export const appInstance = makeRoot()
+export const appInstance = createContainer()
   .add(() => ({
     a: () => new A(),
   }))
